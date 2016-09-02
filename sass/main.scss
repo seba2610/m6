@@ -98,421 +98,98 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-$main-black-site    :  #111;
-$main-background    :  #333;
+$main-black-site    :  #000;
 
 body{
+    margin: 0;
     padding: 0;
-    margin: auto;
-    background-color: black;
     font-family: 'Open Sans', Helvetica;
     color: white;
 }
 
-a{
-    color: white;
+#navbar-chunk{
+    width: 100%;
+    height: 120px;
 }
 
 .navbar{
-    border-width: 0 !important;
-    @include linear-gradient(#000, 60%, rgba(0,0,0,0.0), 100%);
-    width: 100%;
+    background-color: #eee;
+    border-bottom: 2px solid black;
+}
+
+.navbar-brand{
+    margin: 10px !important;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background: url('../img/logo.svg') no-repeat;
+    background-size: cover;
+}
+
+#navbar-contact{
+    margin-top: 30px;
+    background-color: #eee;
+    color:black;
+    border: 1px solid black;
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
 }
 
 .container-fluid{
     padding: 0;
 }
 
-.navbar-fixed-top{
-    position: fixed;
-    z-index: 1000;
-}
-
-.navbar-toggle{
-    @include border-radius(0);
-}
-
-.navbar-toggle span{
-    background-color: white;
-}
-
-h1{
-    font-size: 52px;
-}
-
-.nav>li>a:focus, .nav>li>a:hover{
-    background-color: #222;
-    opacity: 0.8;
-    color:white;
-}
-
-#brand-logo{
-    display: block;
-    left: 50%;
-    background: url('../img/brand-logo.svg') left center no-repeat;
-    margin: 0 auto auto 30px;
-}
-
-#brand-logo:hover{
-    opacity: 0.8;
-}
-
-#brand-logo span{
-    font-size: 16px;
-    font-weight: bold;
-    bottom: 0;
-    position: relative;
-    display: inline-block;
-}
-
-#brand-logo:hover, #brand-logo:focus{
-    color: white !important;
-}
-
-#empty-chunk{
+#main-cover{
+    display: table;
     width: 100%;
-    height: 100px;
-}
-
-#carousel-wrapper{
-    position: relative;
-}
-
-#item-1{
-    width: 100%;
-    height: 700px;
-    background: url('../img/img_1.jpg') center;
-    background-size: cover;
-}
-
-#item-1 .carousel-text-wrapper{
-     float: right;
-     margin: 10%;
-    text-shadow: 0 0 10px rgba(0,0,0,1);
-}
-
-#item-2{
-    width: 100%;
-    height: 700px;
-    background: url('../img/img_2.jpg') top;
-    background-size: cover;
-}
-
-#item-3{
-    width: 100%;
-    height: 700px;
-    background: url('../img/img_3.jpg') top;
-    background-size: cover;
-}
-
-#services-grid-wrapper{
-    position: relative;
-}
-
-.service-content{
-    position: relative;
-    top:50%;
-    @include translate(0,-50%);
-}
-
-.service-content-wrapper{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: rgba(0,0,0,0.8);
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.service-cell h1{
-    width: 100%;
-    text-align: center;
-    font-size: 38px;
-    text-shadow: 0 0 10px rgba(0,0,0,1);
-    font-weight: 100;
-    padding: 0;
-    margin: 0 auto 30px auto;
-}
-
-.service-cell p{
-    text-align: center;
-    font-size: 18px;
-    display: block;
-    font-weight: 100;
-    margin: auto;
-    max-width: 400px;
-    position: relative;
-}
-
-
-#service-1{
-    background: url('../img/service_1.jpg') center no-repeat;
-    background-size: cover;
-}
-
-#service-2{
-    background: url('../img/service_2.jpg') center no-repeat;
-    background-size: cover;
-}
-
-#service-3{
-    background: url('../img/service_3.jpg') center no-repeat;
-    background-size: cover;
-}
-
-#service-4{
-    background: url('../img/service_4.jpg') center no-repeat;
-    background-size: cover;
-}
-
-#testimonies-wrapper{
-    position: relative;
-}
-
-.testimony-text{
-    display: block;
-    margin: auto;
-    position: relative;
-    width: 80%;
-    margin: 50px auto 20px auto;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 100;
-    max-width: 800px;
-}
-
-.testimony-author{
-    width: 80%;
-    max-width: 800px;
-    text-align: right;
-    margin: 30px auto !important;
-}
-
-#contact-me{
-    font-size: 42px;
-    font-weight: 100;
-    text-align: center;
-}
-
-#contact-wrapper{
-    border-top:1px solid white;
-    width: 80%;
-    margin: 60px auto;
-}
-
-#email-input, #name-input, #msg-textarea{
-    height:50px;
-    display: block;
-    border: 1px solid #aaa;
-    background-color: #111;
-    font-size: 16px;
-    padding: 5px;
-    @include border-radius(4px);
-    resize: none;
-    width:100%;
-}
-
-#msg-textarea{
-    height: 150px;
-}
-
-#contact-img{
-    background: url('../img/img_4.jpg') top no-repeat;
-    background-size: cover;
     height: 400px;
-    margin: 20px;
-}
-
-#facebook-btn:hover{
-    opacity: 0.5;
-}
-
-#facebook-btn, #whatsapp-btn{
-    display: inline-block;
-    height: 30px;
-    padding-left: 40px;
-    line-height: 32px;
-    text-align: left;
-    margin: 20px 0;
-}
-
-#facebook-btn{
-    background: url('../img/facebook-logo.svg') left no-repeat;
-}
-
-#whatsapp-btn{
-    background: url('../img/whatsapp-logo.svg') left no-repeat;
-}
-
-#address-contact{
-    display: block;
-    margin-top: 30px;
-    font-size: 18px;
-}
-
-#scaggiano-wrapper{
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 20px auto;
-    width:200px;
-}
-
-#scaggiano-wrapper:hover{
-    text-decoration: underline;
-}
-
-#page-developed-by{
-    text-align: center;
-}
-
-.logo-circle{
-    background-color: rgba(232,92,88,1);
-    position:relative;
-    width:30px;
-    height: 30px;
-    border-radius: 15px;
-    display: inline-block;
-    margin: 5px;
-}
-
-.logo-chars{
+    background: url('../img/background.jpg') center no-repeat;
+    background-size: cover;
     position: relative;
-    width:100%;
-    height:100%;
-    margin:5px;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 16px;
 }
 
-.horiz-center{
-    left:50%;
-    @include translate(-50%,0);
+#cover-content{
+    text-align: center;
+    margin: 100px auto;
+    position: relative;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px black;
 }
 
-h3{
-    font-family: "Open Sans", Helvetica;
+#cover-content h1{
+    font-weight: 300;
+    padding: 0;
+    font-size: 48px;
+    color: white;
+}
+
+#cover-content h3{
     font-weight: 100;
-    color: #eee;
-    font-size: 18px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
 }
 
-.btn{
-    margin: 30px 10px 10px 0;
-    width: 100px;
+.product-gallery{
+    height: 400px;
+    background-color: #ccc;
+    border:2px solid white;
+}
+
+footer{
+    height: 400px;
+    background-color: $main-black-site;
 }
 
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
-    .navbar{
-        width: 100%;
-    }
-    
-    #brand-logo{
-        width: 230px;
-        height: 150px;
-    }
-    
-    #brand-logo span{
-        margin: 110px auto auto 100px;
-    }
-    
-    .navbar{
-        height: 230px;
-        margin: auto;
-    }
-    
-    .navbar-right{
-        font-size: 18px;
-        margin: 10px 20px 0 0;
-        position: relative;
-    }
-    
-    #services-grid-wrapper .row{
-        position: relative;
-    }
-        
-    .service-cell{
-        height: 400px;
-        background-color: yellow;
-        border: 1px solid black;
-        padding: 0;
-    }
-    
-    .row{
-        padding: 0;
-        margin: 0;
-    }
-    
-    #services-grid-wrapper{
-        height: 800px;
-    }
-    
-    .testimony-text{
-        font-size: 24px;
-    }
-    
-    .testimony-author{
-        font-size: 18px;
-    }
 }
 
 @media only screen and (max-width: 767px) {
-    #brand-logo{
-        width: 210px;
-        height: 100px;
-        margin-top: 10px;
-    }
-    
-    #brand-logo span{
-        margin: 80px auto auto 75px;
-    }
-    
-    .navbar{
-        height: 180px;
-        margin: 0 auto 0 auto;
-    }
-    
-    .navbar-right{
-        font-size: 22px;
-        margin: 0 0 0 0;
-        position: relative;
-        background-color: black;
-    }
-    
-    .navbar-right li a{
-        padding: 20px;
-    }
-    
-    #services-grid-wrapper .row{
-        position: relative;
-    }
-        
-    .service-cell{
-        height: 400px;
-        background-color: yellow;
-        border: 1px solid black;
-        padding: 0;
-    }
-    
-    #services-grid-wrapper{
-        height: 1600px;
-    }
-    
-    .row{
-        padding: 0;
-        margin: 0;
-    }
-    
-    .testimony-text{
-        font-size: 18px;
-    }
-    
-    .testimony-author{
-        font-size: 16px;
-    }
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
