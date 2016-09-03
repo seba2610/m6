@@ -179,6 +179,7 @@ body{
     background-color: #ccc;
     border:2px solid white;
     padding: 0;
+    overflow: hidden;
 }
 
 .product-img {
@@ -186,24 +187,20 @@ body{
     position: relative;
     float: left;
     background-size: contain;
-}
-
-.product-img-1{
-    width: 50%;
+    object-fit: cover;
     height: 100%;
+    width: 100%;
 }
 
-.product-img-2{
-    width: 50%;
-    height: 50%;
+.product-caption{
+    position:relative;
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    display: table;
 }
-
-.product-img-3{
-    width: 50%;
-    height: 50%;
-}
-
-.produc
 
 footer{
     height: 400px;

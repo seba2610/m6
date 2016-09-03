@@ -285,7 +285,17 @@
 			}
 		};
 
-		initPhotoSwipeFromDOM('#product-1');
-        initPhotoSwipeFromDOM('#product-2');
-        initPhotoSwipeFromDOM('#product-3');
+		initPhotoSwipeFromDOM('.product-gallery');
+   
 	})();
+
+$(document).ready(function(){
+    $('.product-gallery').slick({
+      autoplay:true,
+      dots: false,
+      infinite: true,
+      speed: 300,
+      adaptiveHeight: false,
+      arrows:false
+    });
+});
