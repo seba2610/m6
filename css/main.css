@@ -146,27 +146,27 @@ body {
   height: 424px;
   background-color: #ccc;
   border: 2px solid white;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 .product-img {
   display: block;
   position: relative;
   float: left;
-  background-size: contain; }
+  background-size: contain;
+  object-fit: cover;
+  height: 100%;
+  width: 100%; }
 
-.product-img-1 {
-  width: 50%;
-  height: 100%; }
+.product-caption {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: table; }
 
-.product-img-2 {
-  width: 50%;
-  height: 50%; }
-
-.product-img-3 {
-  width: 50%;
-  height: 50%; }
-
-.produc
 footer {
   height: 400px;
   background-color: #000; }
