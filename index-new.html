@@ -7,8 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/photoswipe.css"> 
+        <link rel="stylesheet" href="css/default-skin/default-skin.css"> 
         <style>
             body {
                 padding-top: 50px;
@@ -58,10 +59,37 @@
         <section id="product-wrapper">
             <div class="row">
                 <div class="col-lg-4 product-gallery" id="product-1">
+                    <a href="img/product_1/1.jpg" data-size="1600x1600" data-med="img/product_1/1.jpg" data-med-size="1024x1024" data-author="Folkert Gorter">
+                      <img src="img/product_1/1.jpg" class="product-img product-img-1" alt="">
+                    </a>
+                    <a href="img/product_1/2.jpg" data-size="1600x1600" data-med="img/product_1/2.jpg" data-med-size="1024x1024" data-author="Folkert Gorter">
+                      <img src="img/product_1/2.jpg" class="product-img product-img-2" alt="">
+                    </a>
+                    <a href="img/product_1/3.jpg" data-size="1600x1600" data-med="img/product_1/3.jpg" data-med-size="1024x1024" data-author="Folkert Gorter" >
+                      <img src="img/product_1/3.jpg" class="product-img product-img-3" alt="">
+                    </a>
                 </div>
                 <div class="col-lg-4 product-gallery" id="product-2">
+                    <a href="img/product_2/1.jpg" data-size="1600x1600" data-med="img/product_2/1.jpg" data-med-size="1024x1024" data-author="Folkert Gorter">
+                      <img src="img/product_2/1.jpg" class="product-img product-img-1" alt="">
+                    </a>
+                    <a href="img/product_2/2.jpg" data-size="1600x1600" data-med="img/product_2/2.jpg" data-med-size="1024x1024" data-author="Folkert Gorter">
+                      <img src="img/product_2/2.jpg" class="product-img product-img-2" alt="">
+                    </a>
+                    <a href="img/product_2/3.jpg" data-size="1600x1600" data-med="img/product_2/3.jpg" data-med-size="1024x1024" data-author="Folkert Gorter" >
+                      <img src="img/product_2/3.jpg" class="product-img product-img-3" alt="">
+                    </a>
                 </div>
                 <div class="col-lg-4 product-gallery" id="product-3">
+                    <a href="img/product_3/1.jpg" data-size="1600x1600" data-med="img/product_3/1.jpg" data-med-size="1024x1024" data-author="Folkert Gorter">
+                      <img src="img/product_3/1.jpg" class="product-img product-img-1" alt="">
+                    </a>
+                    <a href="img/product_3/2.jpg" data-size="1600x1600" data-med="img/product_3/2.jpg" data-med-size="1024x1024" data-author="Folkert Gorter">
+                      <img src="img/product_3/2.jpg" class="product-img product-img-2" alt="">
+                    </a>
+                    <a href="img/product_3/3.jpg" data-size="1600x1600" data-med="img/product_3/3.jpg" data-med-size="1024x1024" data-author="Folkert Gorter" >
+                      <img src="img/product_3/3.jpg" class="product-img product-img-3" alt="">
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -78,6 +106,8 @@
     </div> <!-- /container -->        
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/photoswipe-ui-default.js"></script>
+        <script src="js/photoswipe.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -94,5 +124,54 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
     </body>
 </html>

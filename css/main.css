@@ -127,7 +127,7 @@ body {
   max-width: 700px;
   padding: 20px;
   border-radius: 20px;
-  text-shadow: 2px 2px 2px black; }
+  text-shadow: 2px 2px 4px black; }
 
 #cover-content h1 {
   font-weight: 300;
@@ -143,10 +143,30 @@ body {
   color: white; }
 
 .product-gallery {
-  height: 400px;
+  height: 424px;
   background-color: #ccc;
-  border: 2px solid white; }
+  border: 2px solid white;
+  padding: 0; }
 
+.product-img {
+  display: block;
+  position: relative;
+  float: left;
+  background-size: contain; }
+
+.product-img-1 {
+  width: 50%;
+  height: 100%; }
+
+.product-img-2 {
+  width: 50%;
+  height: 50%; }
+
+.product-img-3 {
+  width: 50%;
+  height: 50%; }
+
+.produc
 footer {
   height: 400px;
   background-color: #000; }
