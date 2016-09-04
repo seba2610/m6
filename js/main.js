@@ -294,8 +294,9 @@ $(document).ready(function(){
       autoplay:true,
       dots: false,
       infinite: true,
-      speed: 300,
+      speed: 800,
       adaptiveHeight: false,
-      arrows:false
+      arrows:false,
+      fade:true
     });
 });
