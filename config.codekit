@@ -302,6 +302,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/sierra-xs.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 953468,
+		"inputAbbreviatedPath": "\/img\/sierra-xs.jpeg",
+		"outputAbbreviatedPath": "\/img\/sierra-xs.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index-new.html": {
 		"fileType": 8192,
 		"ignore": 0,
