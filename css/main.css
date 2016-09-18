@@ -123,7 +123,7 @@ body {
 
 #cover-content {
   text-align: center;
-  margin: 100px auto;
+  margin: 50px auto;
   position: relative;
   max-width: 700px;
   padding: 20px;
@@ -193,13 +193,17 @@ footer {
   font-weight: 100;
   text-align: center; }
 
+#name-label, #email-label, #msg-label{
+    font-size: 20px;
+}
+
 #contact-wrapper {
   border-top: 1px solid white;
   width: 80%;
   margin: 60px auto; }
 
 #email-input, #name-input, #msg-textarea {
-  height: 50px;
+  height: 40px;
   display: block;
   border: 1px solid #aaa;
   background-color: #111;
@@ -210,10 +214,15 @@ footer {
   -ms-border-radius: 4px;
   border-radius: 4px;
   resize: none;
-  width: 100%; }
+}
 
 #msg-textarea {
   height: 150px; }
+
+#social-network-wrapper{
+    margin: 20px 0;
+    padding: 0;
+}
 
 #contact-img {
   background: url("../img/img_4.jpg") top no-repeat;
@@ -247,16 +256,27 @@ footer {
   margin-top: 20px; }
 
 @media only screen and (min-width: 768px) {
-  #navbar-chunk {
-    height: 120px; }
+    #navbar-chunk {
+        height: 120px; }
 
-  .navbar-brand {
-    height: 100px;
-    width: 100px; } }
+    .navbar-brand {
+        height: 100px;
+        width: 100px; }
+    
+    #email-input, #name-input, #msg-textarea {
+        width: 80%; 
+    }
+}
+
 @media only screen and (max-width: 767px) {
   .navbar-brand {
     height: 60px;
-    width: 60px; } }
+    width: 60px; }
+    
+    #email-input, #name-input, #msg-textarea {
+        width: 100%; 
+    }
+}
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */ }
 /* ==========================================================================
