@@ -13,6 +13,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/bano.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bano.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/_main-settings.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -136,6 +145,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/img\/background.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 861777,
+		"inputAbbreviatedPath": "\/img\/background.jpeg",
+		"outputAbbreviatedPath": "\/img\/background.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/product_1\/1.jpg": {
 		"fileType": 16384,
@@ -287,17 +307,6 @@
 		"initialSize": 171717,
 		"inputAbbreviatedPath": "\/img\/product_5\/2.jpg",
 		"outputAbbreviatedPath": "\/img\/product_5\/2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/sierra-xs.jpeg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 953468,
-		"inputAbbreviatedPath": "\/img\/sierra-xs.jpeg",
-		"outputAbbreviatedPath": "\/img\/sierra-xs.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
